@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -A see200002p
+#SBATCH -N 1
+#SBATCH -n 2
+#SBATCH -J myjob
+#SBATCH -t 01:00:00
+export OMP_NUM_THREADS=2
+./mergeomp
+
